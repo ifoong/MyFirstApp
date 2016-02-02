@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">My First App</string>
+    <string name="intro_text">Data dump from the Fitness API</string>
+    <string name="action_delete_session">Delete step count data</string>
+    <string name="action_settings">Settings</string>
+</resources>
