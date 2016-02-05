@@ -11,12 +11,6 @@ import android.view.MenuItem;
 
 import android.graphics.Color;
 import android.os.AsyncTask;
-import android.os.Bundle;
-import android.support.design.widget.Snackbar;
-import android.support.v7.app.AppCompatActivity;
-import android.view.Menu;
-import android.view.MenuItem;
-import android.widget.ScrollView;
 
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.Scopes;
@@ -49,10 +43,11 @@ import java.util.concurrent.TimeUnit;
 import static java.text.DateFormat.getDateInstance;
 import static java.text.DateFormat.getTimeInstance;
 
+import com.deloitte.ifoong.myfirstapp.User;
+
 
 public class MyActivity extends AppCompatActivity {
 
-    // Sample code
     public static final String TAG = "MyFirstApp";
     private static final int REQUEST_OAUTH = 1;
     private static final String DATE_FORMAT = "yyyy.MM.dd HH:mm:ss";
@@ -389,6 +384,8 @@ public class MyActivity extends AppCompatActivity {
 
         logView.setBackgroundColor(Color.WHITE);
         msgFilter.setNext(logView);
+        String userTestString = User.getUserTest();
+        Log.i(TAG,userTestString);
         Log.i(TAG, "Ready");
     }
 }
